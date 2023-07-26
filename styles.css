@@ -1,0 +1,180 @@
+/* Updated wild and psychedelic styling for the portfolio website */
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
+    color: #FFF;
+}
+
+header {
+    background-color: #FFAA00;
+    color: #131313;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #FFAA00;
+    transition: background-color 0.3s ease;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #FFD700;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    font-size: 3rem;
+    color: #FFAA00;
+    margin-bottom: 1rem;
+    font-family: 'Bungee', cursive;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #FFD700;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home {
+    background-color: #FFD700;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about {
+    background-image: radial-gradient(circle, #4400FF, #0FFF00);
+    padding: 2rem;
+    border-radius: 10px;
+    color: #FFAA00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#portfolio {
+    background-color: #0FFF00;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#contact {
+    background-color: #FF00FF;
+    color: #FFF;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #FFAA00;
+    color: #131313;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Additional Styles */
+
+/* Wild and psychedelic header background */
+header {
+    background-image: url('psychedelic-header.gif');
+    background-size: cover;
+    background-position: center;
+    animation: hue-rotate 10s linear infinite;
+}
+
+@keyframes hue-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Funky animation on portfolio images */
+#portfolio img {
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: pulse 3s ease infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#home {
+    
+    background-image: url("unicorn.png");
+    padding: 4rem 2rem;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#home2:hover{
+    color:red; /* Change to your desired color */
+}
+
+/* Other CSS styles */
+
+#portfolio {
+    background-color: #0FFF00;
+    padding: 2rem;
+    border-radius: 10px;
+    background-image: conic-gradient(red, yellow, green);
+}
+
+/* Fancy colorful borders for portfolio images */
+.portfolio-item {
+    display: inline-block;
+    margin: 1rem;
+
+}
+
+.image-with-border {
+    border: 10px solid transparent;
+    border-image: linear-gradient(45deg, #FF00FF, #00FFFF, #FFA500);
+    border-image-slice: 1;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    height: 400px;
+}
+
+.image-with-border:hover {
+    transform: scale(1.05);
+}
